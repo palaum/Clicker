@@ -44,21 +44,21 @@ int count = 0;
     count += 1;
     self.welcomeLabel.text = [NSString stringWithFormat:@"%d", count];
     
-    [_resetButton setHidden: false];
+    self.resetButton.hidden = NO;
 }
 
 - (IBAction)minusWelcomeLabel:(id)sender {
     count -= 1;
     self.welcomeLabel.text = [NSString stringWithFormat:@"%d", count];
     
-    [_resetButton setHidden: false];
+    self.resetButton.hidden = NO;
 }
 
 - (IBAction)resetWelcomeLabel:(id)sender {
     count = 0;
     self.welcomeLabel.text = [NSString stringWithFormat:@"Clicker"];
     
-    [_resetButton setHidden: true];
+    self.resetButton.hidden = YES;
 }
 
 @end
