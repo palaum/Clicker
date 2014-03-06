@@ -29,38 +29,39 @@
     [super viewDidLoad];
     
     self.routesData = @[
-                        @[ @"010", @"25" ],
-                        @[ @"024", @"25" ],
-                        @[ @"034", @"25" ],
-                        @[ @"046", @"25" ],
-                        @[ @"058", @"25" ],
-                        @[ @"064", @"25" ],
-                        @[ @"078", @"25" ],
-                        @[ @"089", @"25" ],
-                        @[ @"096", @"25" ],
-                        @[ @"100", @"25" ],
+                        @{ @"title": @"010", @"price": @"25" },
+                        @{ @"title": @"024", @"price": @"25" },
+                        @{ @"title": @"034", @"price": @"25" },
+                        @{ @"title": @"046", @"price": @"25" },
+                        @{ @"title": @"058", @"price": @"25" },
+                        @{ @"title": @"064", @"price": @"25" },
+                        @{ @"title": @"078", @"price": @"25" },
+                        @{ @"title": @"089", @"price": @"25" },
+                        @{ @"title": @"096", @"price": @"25" },
+                        @{ @"title": @"100", @"price": @"25" },
                         
-                        @[ @"110", @"30" ],
-                        @[ @"124", @"30" ],
-                        @[ @"134", @"30" ],
-                        @[ @"145", @"30" ],
-                        @[ @"158", @"30" ],
-                        @[ @"164", @"30" ],
-                        @[ @"178", @"30" ],
-                        @[ @"189", @"30" ],
-                        @[ @"196", @"30" ],
-                        @[ @"200", @"30" ],
+                        @{ @"title": @"110", @"price": @"30" },
+                        @{ @"title": @"124", @"price": @"30" },
+                        @{ @"title": @"134", @"price": @"30" },
+                        @{ @"title": @"145", @"price": @"30" },
+                        @{ @"title": @"158", @"price": @"30" },
+                        @{ @"title": @"164", @"price": @"30" },
+                        @{ @"title": @"178", @"price": @"30" },
+                        @{ @"title": @"189", @"price": @"30" },
+                        @{ @"title": @"196", @"price": @"30" },
+                        @{ @"title": @"200", @"price": @"30" },
                         
-                        @[ @"210", @"50" ],
-                        @[ @"224", @"50" ],
-                        @[ @"234", @"50" ],
-                        @[ @"246", @"50" ],
-                        @[ @"258", @"50" ],
-                        @[ @"264", @"50" ],
-                        @[ @"278", @"50" ],
-                        @[ @"289", @"50" ],
-                        @[ @"296", @"50" ],
-                        @[ @"300", @"50" ]];
+                        @{ @"title": @"210", @"price": @"50" },
+                        @{ @"title": @"224", @"price": @"50" },
+                        @{ @"title": @"234", @"price": @"50" },
+                        @{ @"title": @"246", @"price": @"50" },
+                        @{ @"title": @"258", @"price": @"50" },
+                        @{ @"title": @"264", @"price": @"50" },
+                        @{ @"title": @"278", @"price": @"50" },
+                        @{ @"title": @"289", @"price": @"50" },
+                        @{ @"title": @"296", @"price": @"50" },
+                        @{ @"title": @"300", @"price": @"50" }
+                        ];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -80,7 +81,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 30;
+    return self.routesData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -88,16 +89,17 @@
     static NSString *CellIdentifier = @"BasicCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"№%@",[[self.routesData objectAtIndex:indexPath.row] objectAtIndex:0]];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ руб.",[[self.routesData objectAtIndex:indexPath.row] objectAtIndex:1]];
+    NSDictionary *route = [self.routesData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"№%@", [route objectForKey:@"title"]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ руб.", [route objectForKey:@"price"]];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"The selected cell number of %ld",(long)indexPath.row+1);
+    NSDictionary *route = [self.routesData objectAtIndex:indexPath.row];
+    NSLog(@"The selected route: %@", [route objectForKey:@"title"]);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
