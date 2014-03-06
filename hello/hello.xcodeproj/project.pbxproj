@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0FC19018C83E8E00BE17EE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FC18F18C83E8E00BE17EE /* LoginViewController.m */; };
+		7A0FC19318C83EAE00BE17EE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FC19218C83EAE00BE17EE /* RegisterViewController.m */; };
+		7A0FC19618C843A200BE17EE /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FC19518C843A200BE17EE /* RoutesViewController.m */; };
+		7A0FC19818C8491F00BE17EE /* bus-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FC19718C8491F00BE17EE /* bus-small@2x.png */; };
 		7A4BEBE518B940E600139B04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4BEBE418B940E600139B04 /* Foundation.framework */; };
 		7A4BEBE718B940E700139B04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4BEBE618B940E700139B04 /* CoreGraphics.framework */; };
 		7A4BEBE918B940E700139B04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4BEBE818B940E700139B04 /* UIKit.framework */; };
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0FC18E18C83E8E00BE17EE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7A0FC18F18C83E8E00BE17EE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7A0FC19118C83EAE00BE17EE /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		7A0FC19218C83EAE00BE17EE /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		7A0FC19418C843A200BE17EE /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
+		7A0FC19518C843A200BE17EE /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
+		7A0FC19718C8491F00BE17EE /* bus-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bus-small@2x.png"; path = "../bus-small@2x.png"; sourceTree = "<group>"; };
 		7A4BEBE118B940E600139B04 /* hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4BEBE418B940E600139B04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A4BEBE618B940E700139B04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +125,12 @@
 			children = (
 				7A4BEBF318B940E700139B04 /* AppDelegate.h */,
 				7A4BEC1518B942C800139B04 /* Storyboard.storyboard */,
+				7A0FC19418C843A200BE17EE /* RoutesViewController.h */,
+				7A0FC19518C843A200BE17EE /* RoutesViewController.m */,
+				7A0FC19118C83EAE00BE17EE /* RegisterViewController.h */,
+				7A0FC19218C83EAE00BE17EE /* RegisterViewController.m */,
+				7A0FC18E18C83E8E00BE17EE /* LoginViewController.h */,
+				7A0FC18F18C83E8E00BE17EE /* LoginViewController.m */,
 				7A4BEC1718B9452200139B04 /* MainViewController.h */,
 				7A4BEC1818B9452200139B04 /* MainViewController.m */,
 				7A4BEBF418B940E700139B04 /* AppDelegate.m */,
@@ -126,6 +143,7 @@
 		7A4BEBEB18B940E700139B04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7A0FC19718C8491F00BE17EE /* bus-small@2x.png */,
 				7A4BEBEC18B940E700139B04 /* hello-Info.plist */,
 				7A4BEBED18B940E700139B04 /* InfoPlist.strings */,
 				7A4BEBF018B940E700139B04 /* main.m */,
@@ -228,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4BEBEF18B940E700139B04 /* InfoPlist.strings in Resources */,
+				7A0FC19818C8491F00BE17EE /* bus-small@2x.png in Resources */,
 				7A4BEBF718B940E700139B04 /* Images.xcassets in Resources */,
 				7A4BEC1618B942C800139B04 /* Storyboard.storyboard in Resources */,
 			);
@@ -248,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0FC19318C83EAE00BE17EE /* RegisterViewController.m in Sources */,
+				7A0FC19018C83E8E00BE17EE /* LoginViewController.m in Sources */,
+				7A0FC19618C843A200BE17EE /* RoutesViewController.m in Sources */,
 				7A4BEBF518B940E700139B04 /* AppDelegate.m in Sources */,
 				7A4BEC1918B9452200139B04 /* MainViewController.m in Sources */,
 				7A4BEBF118B940E700139B04 /* main.m in Sources */,
@@ -451,6 +473,7 @@
 				7A4BEC0F18B940E700139B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4BEC1018B940E700139B04 /* Build configuration list for PBXNativeTarget "helloTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +482,7 @@
 				7A4BEC1218B940E700139B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

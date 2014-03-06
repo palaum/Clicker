@@ -11,6 +11,7 @@
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (nonatomic) int count;
 
 @end
 
@@ -29,27 +30,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-int count = 0;
-
 - (IBAction)plusWelcomeLabel:(id)sender {
-    count += 1;
-    self.welcomeLabel.text = [NSString stringWithFormat:@"%d", count];
-    
-    self.resetButton.hidden = NO;
+    ++self.count;
 }
 
 - (IBAction)minusWelcomeLabel:(id)sender {
-    count -= 1;
-    self.welcomeLabel.text = [NSString stringWithFormat:@"%d", count];
-    
-    self.resetButton.hidden = NO;
+    --self.count;
 }
 
 - (IBAction)resetWelcomeLabel:(id)sender {
-    count = 0;
-    self.welcomeLabel.text = [NSString stringWithFormat:@"Clicker"];
-    
-    self.resetButton.hidden = YES;
+    self.count = 0;
+}
+
+- (void)setCount:(int)count {
+    _count = count;
+    if (count == 0) {
+        self.resetButton.hidden = YES;
+        self.welcomeLabel.text = [NSString stringWithFormat:@"Clicker"];
+    } else {
+        self.resetButton.hidden = NO;
+        self.welcomeLabel.text = [NSString stringWithFormat:@"%d", count];
+    }
 }
 
 @end
