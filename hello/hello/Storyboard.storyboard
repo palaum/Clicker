@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2bE-BF-5mu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WX8-Ib-ook">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -113,17 +113,17 @@
         <!--Routes View Controller - Маршруты-->
         <scene sceneID="XUr-E3-ciJ">
             <objects>
-                <tableViewController id="nUI-Qa-a9H" customClass="RoutesViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="leftViewController" id="nUI-Qa-a9H" customClass="RoutesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pm3-qa-VwS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" textLabel="GcO-Jo-5ms" detailTextLabel="Nz3-cS-O8e" imageView="j7i-mA-fNt" style="IBUITableViewCellStyleValue1" id="MW2-mA-VRa">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" textLabel="GcO-Jo-5ms" detailTextLabel="Nz3-cS-O8e" imageView="3CO-U2-KHi" style="IBUITableViewCellStyleValue1" id="MW2-mA-VRa">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MW2-mA-VRa" id="hFT-aR-JbM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Название" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GcO-Jo-5ms">
@@ -133,18 +133,19 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bus-small.png" id="j7i-mA-fNt">
-                                            <rect key="frame" x="15" y="7" width="29" height="29"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Цена" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nz3-cS-O8e">
-                                            <rect key="frame" x="264" y="11" width="41" height="21"/>
+                                            <rect key="frame" x="244" y="11" width="41" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bus-small.png" id="3CO-U2-KHi">
+                                            <rect key="frame" x="15" y="7" width="29" height="29"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -153,22 +154,59 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJm-b4-G6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="1316"/>
+            <point key="canvasLocation" x="-11" y="1696"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oJE-Sd-wk5">
             <objects>
-                <navigationController definesPresentationContext="YES" id="2bE-BF-5mu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="centerViewController" definesPresentationContext="YES" id="2bE-BF-5mu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tix-GG-zZK">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nUI-Qa-a9H" kind="relationship" relationship="rootViewController" id="x5U-w3-MYp"/>
+                        <segue destination="fAD-wH-nNW" kind="relationship" relationship="rootViewController" id="6nx-Jd-j70"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2FM-jj-XQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-229" y="1316"/>
+            <point key="canvasLocation" x="247" y="1696"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="txM-MV-0xg">
+            <objects>
+                <viewController id="fAD-wH-nNW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p08-GN-MFi"/>
+                        <viewControllerLayoutGuide type="bottom" id="iFs-zw-toL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F4i-Hm-hVa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Em2-3g-muJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2q-en-sn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="1696"/>
+        </scene>
+        <!--Routes Side Panel Controller-->
+        <scene sceneID="Ct8-Zb-t4K">
+            <objects>
+                <viewController id="WX8-Ib-ook" customClass="RoutesSidePanelController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kxj-gL-OSc"/>
+                        <viewControllerLayoutGuide type="bottom" id="11a-mh-h1a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K9t-fh-vMe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNu-46-BVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-461" y="1696"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vm1-6L-Pta">

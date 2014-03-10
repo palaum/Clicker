@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3135721D67FC46FEB0055220 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB75E9172AE42DDB942643A /* libPods.a */; };
 		7A0FC19018C83E8E00BE17EE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FC18F18C83E8E00BE17EE /* LoginViewController.m */; };
 		7A0FC19318C83EAE00BE17EE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FC19218C83EAE00BE17EE /* RegisterViewController.m */; };
 		7A0FC19618C843A200BE17EE /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FC19518C843A200BE17EE /* RoutesViewController.m */; };
@@ -25,6 +26,7 @@
 		7A4BEC0A18B940E700139B04 /* helloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BEC0918B940E700139B04 /* helloTests.m */; };
 		7A4BEC1618B942C800139B04 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BEC1518B942C800139B04 /* Storyboard.storyboard */; };
 		7A4BEC1918B9452200139B04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BEC1818B9452200139B04 /* MainViewController.m */; };
+		7AE0D32A18CDE05B00AEA338 /* RoutesSidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0D32918CDE05B00AEA338 /* RoutesSidePanelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AB75E9172AE42DDB942643A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0FC18E18C83E8E00BE17EE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7A0FC18F18C83E8E00BE17EE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7A0FC19118C83EAE00BE17EE /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -64,6 +67,9 @@
 		7A4BEC1518B942C800139B04 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7A4BEC1718B9452200139B04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7A4BEC1818B9452200139B04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7AE0D32818CDE05B00AEA338 /* RoutesSidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesSidePanelController.h; sourceTree = "<group>"; };
+		7AE0D32918CDE05B00AEA338 /* RoutesSidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesSidePanelController.m; sourceTree = "<group>"; };
+		A20BE83F72A24BE5ADF66834 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 				7A4BEBE718B940E700139B04 /* CoreGraphics.framework in Frameworks */,
 				7A4BEBE918B940E700139B04 /* UIKit.framework in Frameworks */,
 				7A4BEBE518B940E600139B04 /* Foundation.framework in Frameworks */,
+				3135721D67FC46FEB0055220 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +104,7 @@
 				7A4BEC0318B940E700139B04 /* helloTests */,
 				7A4BEBE318B940E600139B04 /* Frameworks */,
 				7A4BEBE218B940E600139B04 /* Products */,
+				A20BE83F72A24BE5ADF66834 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +124,7 @@
 				7A4BEBE618B940E700139B04 /* CoreGraphics.framework */,
 				7A4BEBE818B940E700139B04 /* UIKit.framework */,
 				7A4BEBFD18B940E700139B04 /* XCTest.framework */,
+				2AB75E9172AE42DDB942643A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,8 +132,9 @@
 		7A4BEBEA18B940E700139B04 /* hello */ = {
 			isa = PBXGroup;
 			children = (
-				7A4BEBF318B940E700139B04 /* AppDelegate.h */,
 				7A4BEC1518B942C800139B04 /* Storyboard.storyboard */,
+				7AE0D32818CDE05B00AEA338 /* RoutesSidePanelController.h */,
+				7AE0D32918CDE05B00AEA338 /* RoutesSidePanelController.m */,
 				7A0FC19418C843A200BE17EE /* RoutesViewController.h */,
 				7A0FC19518C843A200BE17EE /* RoutesViewController.m */,
 				7A0FC19118C83EAE00BE17EE /* RegisterViewController.h */,
@@ -133,6 +143,7 @@
 				7A0FC18F18C83E8E00BE17EE /* LoginViewController.m */,
 				7A4BEC1718B9452200139B04 /* MainViewController.h */,
 				7A4BEC1818B9452200139B04 /* MainViewController.m */,
+				7A4BEBF318B940E700139B04 /* AppDelegate.h */,
 				7A4BEBF418B940E700139B04 /* AppDelegate.m */,
 				7A4BEBF618B940E700139B04 /* Images.xcassets */,
 				7A4BEBEB18B940E700139B04 /* Supporting Files */,
@@ -177,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A4BEC0D18B940E700139B04 /* Build configuration list for PBXNativeTarget "hello" */;
 			buildPhases = (
+				4AE257171DC840B1A01D285D /* Check Pods Manifest.lock */,
 				7A4BEBDD18B940E600139B04 /* Sources */,
 				7A4BEBDE18B940E600139B04 /* Frameworks */,
 				7A4BEBDF18B940E600139B04 /* Resources */,
+				D5F2FD8339A34E979D27FA91 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +275,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AE257171DC840B1A01D285D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F2FD8339A34E979D27FA91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A4BEBDD18B940E600139B04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,6 +315,7 @@
 			files = (
 				7A0FC19318C83EAE00BE17EE /* RegisterViewController.m in Sources */,
 				7A0FC19018C83E8E00BE17EE /* LoginViewController.m in Sources */,
+				7AE0D32A18CDE05B00AEA338 /* RoutesSidePanelController.m in Sources */,
 				7A0FC19618C843A200BE17EE /* RoutesViewController.m in Sources */,
 				7A4BEBF518B940E700139B04 /* AppDelegate.m in Sources */,
 				7A4BEC1918B9452200139B04 /* MainViewController.m in Sources */,
@@ -388,6 +435,7 @@
 		};
 		7A4BEC0E18B940E700139B04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20BE83F72A24BE5ADF66834 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +449,7 @@
 		};
 		7A4BEC0F18B940E700139B04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20BE83F72A24BE5ADF66834 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
