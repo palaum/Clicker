@@ -12,8 +12,19 @@
 
 -(void) awakeFromNib
 {
+    // изменяем размер левой панели
+    self.shouldResizeLeftPanel = YES;
+    
+    // предотвращаем выход за границы левой панели при свайпе
+    self.allowLeftOverpan = NO;
+    
     [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"leftViewController"]];
     [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"]];
+}
+
+- (void)stylePanel:(UIView *)panel
+{
+    // т.к. метод предка добавляет скругления, то ничего не выполняя мы их убираем
 }
 
 @end
